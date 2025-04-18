@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cppdbg",
+            "request": "launch",
+            "name": "Launch ESP32 Firmware",
+            "program": "${workspaceFolder}/build/firmware.elf",
+            "cwd": "${workspaceFolder}",
+            "miDebuggerPath": "C:/esp/xtensa-esp32-elf/bin/xtensa-esp32-elf-gdb.exe",
+            "targetArchitecture": "xtensa",
+            "preLaunchTask": "build-firmware"
+        }
+    ],
+    "inputs": [
+        {
+            "type": "promptString",
+            "id": "firmwarePath",
+            "description": "Enter the path to your firmware ELF file"
+        }
+    ]
+}
